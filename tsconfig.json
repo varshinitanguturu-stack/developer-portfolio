@@ -1,24 +1,110 @@
-{
-  "compilerOptions": {
-    "target": "es2023",
-    "module": "esnext",
-    "lib": ["ES2023", "DOM"],
-    "types": ["vite/client"],
-    "allowArbitraryExtensions": true,
-    "skipLibCheck": true,
+import './style.css'
 
-    /* Bundler mode */
-    "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
-    "verbatimModuleSyntax": true,
-    "moduleDetection": "force",
-    "noEmit": true,
+document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
+  <header>
+    <nav>
+      <h2>Varshini Tanguturu</h2>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
 
-    /* Linting */
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "erasableSyntaxOnly": true,
-    "noFallthroughCasesInSwitch": true
-  },
-  "include": ["src"]
-}
+  <main>
+
+    <section id="home" class="hero">
+      <div>
+        <p class="intro">Hello, I'm</p>
+        <h1>Varshini Tanguturu</h1>
+        <h2>Full Stack Developer</h2>
+        <p class="description">
+          I am a passionate developer interested in building modern,
+          responsive and user-friendly web applications.
+        </p>
+
+        <div class="buttons">
+          <a href="#projects" class="btn">View My Work</a>
+          <a href="#contact" class="btn secondary">Contact Me</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I am an enthusiastic developer with a strong interest in
+        web development, software development and data analytics.
+        I enjoy learning new technologies and creating practical projects.
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills">
+        <span>Python</span>
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>React</span>
+        <span>SQL</span>
+        <span>Git & GitHub</span>
+        <span>Data Analytics</span>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <div class="projects">
+
+        <div class="project-card">
+          <h3>AI Driven Multi Disease Prediction System</h3>
+          <p>
+            An AI-based project designed to predict multiple diseases
+            using machine learning techniques.
+          </p>
+          <p><strong>Technologies:</strong> Python, Machine Learning, AI</p>
+        </div>
+
+        <div class="project-card">
+          <h3>Developer Portfolio</h3>
+          <p>
+            A responsive personal portfolio website showcasing my
+            skills, projects and developer profile.
+          </p>
+          <p><strong>Technologies:</strong> HTML, CSS, TypeScript</p>
+        </div>
+
+        <div class="project-card">
+          <h3>Data Analytics Project</h3>
+          <p>
+            A data analysis project involving data preparation,
+            cleaning, transformation and visualization.
+          </p>
+          <p><strong>Technologies:</strong> Python, Pandas, NumPy</p>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>I'm open to opportunities and exciting projects.</p>
+
+      <div class="contact-links">
+        <a href="mailto:your-email@gmail.com">Email Me</a>
+        <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/" target="_blank">GitHub</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Varshini Tanguturu. All Rights Reserved.</p>
+  </footer>
+`
